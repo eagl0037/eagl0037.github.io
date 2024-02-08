@@ -1,3 +1,16 @@
-h1 {
-color: aqua;
-}  
+body {
+    font-size: 18px;
+}
+
+header,footer {
+    background-color: aquamarine;
+}
+
+ol li {
+    list-style-type: square;
+}
+
+ol li:nth-child(odd) {
+     background-color:  coral;
+    }
+   
