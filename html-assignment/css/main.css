@@ -14,3 +14,6 @@ ol li:nth-child(odd) {
      background-color:  coral;
     }
    
+nav ul {
+    list-style-type: none;
+} 
