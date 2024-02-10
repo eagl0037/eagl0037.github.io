@@ -17,3 +17,11 @@ ol li:nth-child(odd) {
 nav ul {
     list-style-type: none;
 } 
+
+.Natasha {
+    color: blueviolet;
+}
+
+#me {
+    box-shadow: 0 0 20px black;
+}
