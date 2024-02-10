@@ -38,5 +38,5 @@ a:link{
     border:1px solid red;  
    }
 #me {
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 2px 1px black;
 }
