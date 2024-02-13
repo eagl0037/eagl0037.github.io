@@ -18,8 +18,9 @@ nav ul {
     list-style-type: none;
 } 
 
-.Natasha {
+.natasha {
     color: blueviolet;
+    width: 600px;
 }
 
 a:link {
@@ -39,4 +40,6 @@ a:link{
    }
 #my-image {
     box-shadow: 0 0 2px 1px black;
+    max-width: 100%;
+    height: auto;
 }
