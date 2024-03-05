@@ -145,19 +145,6 @@ article {
     margin-bottom: 10px; 
 }
 
-
-
-.contact-section input[type="email"] {
-
-    width: calc(100% - 12px); 
-}
-
-
-
-.contact-section textarea {
-    width: calc(100% - 12px); 
-}
-
 .contact-section .radio-buttons {
     border: none; 
     padding: 0; 
