@@ -145,12 +145,6 @@ article {
     margin-bottom: 10px; 
 }
 
-.contact-section input[type="text"] {
-
-    width: calc(100% - 12px); 
-}
-
-
 
 
 .contact-section input[type="email"] {
