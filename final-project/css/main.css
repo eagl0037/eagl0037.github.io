@@ -1,0 +1,36 @@
+/* Navigation Bar */
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 10px;
+}
+
+.nav-list a {
+  color: orange;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+.search {
+  border: 2px solid orange;
+  padding: 5px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
