@@ -73,3 +73,116 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+
+.about-us {
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffe6ac;
+}
+
+.about-us img {
+  width: 40%;
+  margin-right: 5%;
+}
+
+.about-us div {
+  width: 50%;
+  margin-top: 0;
+}
+
+.about-us h1 {
+  margin-bottom: 0;
+}
+
+.about-us p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  gap: 50px 100px;
+  grid-template-columns: auto auto auto;
+  background-color:  white;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: #ffe6ac;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 100px;
+  background-color: white;
+  padding: 10px;
+}
+
+.card {
+  background-color: #ffe6ac;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  grid-column: span 1;
+}
+.digital-button,
+.marketing-button,
+.video-button,
+.web-button,
+.print-button {
+  background-color: black;
+  color: white;
+  font-size: 1rem; /* Increase the font size */
+  padding: 1rem 2rem; /* Add some padding */
+}
+
+.vision {
+  position: relative; /* Position the container relative to its normal position */
+}
+
+.vision img {
+  width: 100%; /* Make the image take up the full width of the container */
+  height: 50vh; /* Set the height of the image to 50 times the viewport height */
+  object-fit: cover; /* Make sure the image covers the entire container */
+}
+
+.vision h1,
+.vision p {
+  position: absolute; /* Position the h1 and p elements absolutely */
+  top: 50%; /* Align the top edge of the h1 and p elements to the middle of the container */
+  left: 50%; /* Align the left edge of the h1 and p elements to the middle of the container */
+  transform: translate(-50%, -50%); /* Move the h1 and p elements up and to the left by 50% of their own width and height */
+  text-align: center; /* Center the text within the h1 and p elements */
+  color: white; /* Set the text color to white */
+}
+
+.vision h1 {
+  font-size: 2rem; /* Set the font size of the h1 element */
+  margin-bottom: 0.5rem; /* Remove the bottom margin of the h1 element */
+}
+
+.vision p {
+  font-size: 1.2rem; /* Set the font size of the p element */
+  margin-top: 0; /* Remove the top margin of the p element */
+}
+
+.vision button {
+  position: relative; /* Position the button absolutely */
+  bottom: 2rem; /* Set the bottom position of the button */
+  left: 50%; /* Align the left edge of the button to the middle of the container */
+  transform: translateX(-50%); /* Move the button to the left by 50% of its own width */
+  background-color: black; /* Set the background color of the button to black */
+  color: white; /* Set the text color of the button to white */
+  padding: 0.5rem 1rem; /* Set the padding of the button */
+  border: none; /* Remove the border of the button */
+  border-radius: 0.25rem; /* Set the border radius of the button */
+  cursor: pointer; /* Set the cursor to a pointer when hovering over the button */
+} 
