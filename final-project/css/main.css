@@ -41,7 +41,9 @@
   padding: 5px;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
+  
 }
+
 .home {
   position: relative;
   width: 100%;
@@ -52,20 +54,22 @@
   height: auto;
 }
 
-.home h1 { position: absolute; top: 40%; left: 35%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 10px 20px; font-size: 100px;
+.home h1 { position: absolute; top: 40%; left: 35%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); 
+  padding: 7px 30px;
+   font-size: 85px;
 
 }
 
-.home p { position: absolute; bottom: 36.6%; left: 35%; transform: translate(-50%, 50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 1.1px 10px;}
+.home p { position: absolute; bottom: 39.6%; left: 35%; transform: translate(-50%, 50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 1.1px 10px;}
 
 .connect-button {
   position: absolute; 
-  bottom: -60px;
+  bottom: -40px;
   left: 10%;
   transform: translateX(-50%);
   background-color: orange;
   color: black;
-  padding: 20px 40px;
+  padding: 30px 40px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -76,7 +80,7 @@
 
 .button-2 {
   position: absolute;
-  top: 94.3%;
+  top: 89.5%;
   left: 4%;
   padding: 15px 20px;
   border: none;
@@ -101,6 +105,7 @@
 .about-us img {
   width: 40%;
   margin-right: 5%;
+  background-color: #ffe6ac;
 }
 
 .about-us div {
@@ -128,16 +133,15 @@
 
 .grid-item {
   background-color: #ffe6ac;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 5px;
+
+  padding: 9px;
   font-size: 14px;
   text-align: center;
 }
 
 .card {
   background-color: #ffe6ac;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 5px;
+  padding: 7px;
   font-size: 14px;
   text-align: center;
   grid-column: span 1;
@@ -208,42 +212,45 @@
 }
 
 
+
 .team-wrapper {
-  padding: 0 1rem;
+  margin: 0 10rem;
+  padding: 0;
+  background-color: #ffe6ac;
 }
 
-.team-wrapper h2 {
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+ position: relative;
+  top: 70%; /* Align the top edge of the h1 and p elements to the middle of the container */
+  
+}
 
-  padding: 2.5rem 0 1.5rem;
+.team-box {
+  box-sizing: border-box;
+  width: 50%;
+  height: 325px;
+  top: 5%;
 }
 
 .team-box img {
 
-  width: 100%;
+  height: 380px;
+  position: relative;
+  top: 1%;
 }
 
-.team-box:nth-child(2),
-.team-box:nth-child(4) {
+.team-box:nth-child(2), .team-box:nth-child(4) {
 
-  background-color: #ffe6ac;
-  margin:-0.2rem 0 1rem;
-  padding: 1.5rem 1rem;
+  margin: 0%;
 }
 
-.team-box h4 {
-  padding-top: 0.75rem;
-}
-
-.team-box hr {
-
-  border: 1px solid#c78c06;
+.team-box:nth-child(3) {
+  order: 1;
 }
 
 
-.team-box p {
-
-  padding: 0.5rem 0 0.25rem;
-}
 
 
 body {
