@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>final-project</title>
-    <link href="css/main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>final-project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
 </head>
 <body>
 
@@ -63,7 +67,10 @@
 
 <div class="wrapper">
     <button class="connect-button">Connect with us</button>
+<button class="button-2">.</button> 
 </div>
+
+
 
 
 
@@ -226,10 +233,6 @@
 
  <!-- set the table to have a width  and apply the border-collapse property to 'collapse', effectively eliminating the spaces between the table cells. Within the table structure, add a thead element for the table headings and a tbody element for the table body. To ensure spacing and alignment within the cells, assign padding and text-align properties to each table heading (th) and table data (td) element.  -->
 
-  <div class="hours">
-   <h1>Hours Of Operation</h1>
-   <table> <thead> <tr> <th>Day</th> <th>Hours</th> </tr> </thead> <tbody> <tr> <td>Monday-Friday</td> <td>9:00 AM - 6:00 PM</td> <tr> <td>Saturday & Sunday</td> <td>Closed</td> </tr> </tbody> </table>
-  </div>
 
   <!-- adjust size to embed change font and style  -->
 
@@ -237,6 +240,30 @@
 
    <h1>Location</h1>
    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11215.63858893247!2d-75.77076931796255!3d45.35063612513849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711556600482!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+   <table class="hours-table">
+    <caption>Hours of Operation</caption>
+    <thead>
+      <tr>
+        <th>Days</th>
+        <th>Hours</th>
+      
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday-Friday</td>
+        <td>9am-6pm</td>
+       
+      </tr>
+      <tr>
+        <td>Saturday-Sunday</td>
+        <td>Closed</td>
+      
+      </tr>
+    </tbody>
+  </table>
+  
 
  <footer> <p>&copy; 2020 Three star media, all images taken from Unsplash</p> </footer> 
  </div>

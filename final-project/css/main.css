@@ -1,4 +1,5 @@
-/* Navigation Bar */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 .list {
   display: flex;
   justify-content: space-between;
@@ -15,16 +16,24 @@
   display: flex;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .nav-list li {
-  margin: 0 10px;
+  margin: 0 20px; /* Increase the margin to spread out the list items */
 }
 
 .nav-list a {
   color: orange;
   font-family: 'Open Sans', sans-serif;
+  padding: 30px;
   text-decoration: none;
+}
+
+.nav-list a:hover {
+  color: black; /* Change the text color to black when you hover over the nav links */
+  background-color: orange; /* Add a background color to the nav links when you hover over them */
+  border-radius: 5px; /* Add some rounded corners to the nav links when you hover over them */
 }
 
 .search {
@@ -33,46 +42,54 @@
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
 }
-
 .home {
   position: relative;
+  width: 100%;
 }
 
-.home h1 {
-  position: absolute;
-  top: 40%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  font-size: 100px;
-  
+.home img {
+  width: 100%;
+  height: auto;
 }
 
-.home p {
- position: absolute;
-  bottom: 36.6%;
-  left: 35%;
-  transform: translate(-50%, 50%);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  
+.home h1 { position: absolute; top: 40%; left: 35%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 10px 20px; font-size: 100px;
+
 }
+
+.home p { position: absolute; bottom: 36.6%; left: 35%; transform: translate(-50%, 50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 1.1px 10px;}
 
 .connect-button {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
+  position: absolute; 
+  bottom: -60px;
+  left: 10%;
   transform: translateX(-50%);
   background-color: orange;
   color: black;
-  padding: 10px 20px;
+  padding: 20px 40px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  z-index: 1; /* Add this line */
+  font-size: 1rem; /* Increase the font size */
+  width: 200px; /* Increase the width */
 }
+
+.button-2 {
+  position: absolute;
+  top: 94.3%;
+  left: 4%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 100px;
+  width: 64%;
+  z-index: 0; /* Add this line */
+}
+
+
+
 
 
 .about-us {
@@ -239,12 +256,29 @@ body {
   padding: 0;
 }
 
+.location {
+  max-width: 600px;
+
+  padding: 40px;
+
+  float: left; /* Add this line */
+  width: 50%; /* Add this line */
+
+}
+
+.map {
+  width: 100%; /* Add this line */
+  height: 600px; /* Add this line */
+  border: 0; /* Add this line */
+}
+
+
 .contact-us {
   max-width: 600px;
   margin: 0 auto;
   padding: 40px;
-
- 
+  float: left; /* Add this line */
+  width: 50%; /* Add this line */
 }
 
 .contact-us h1 {
@@ -305,52 +339,31 @@ body {
   background-color: #333;
 }
 
-.hours {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 40px;
-
- 
+.hours-table {
+  border: solid 1px #DDEEEE;
   border-collapse: collapse;
-}
-
-.hours h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #444;
-  margin-bottom: 20px;
-}
-
-.hours table {
-  width: 100%;
+  border-spacing: 0;
+  font: normal 13px Arial, sans-serif;
+  width: 100%; /* Add this line */
  
-  border-collapse: collapse;
 }
+.hours-table thead th {
+  background-color: #ffe6ac;
+  border: solid 1px black;
 
-.hours th,
-.hours td {
-  padding: 20px;
+  padding: 10px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  text-shadow: 1px 1px 1px #fff;
 }
-
-.hours th {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #444;
-}
-
-.hours td {
-  font-size: 1.2rem;
-  font-weight: 400;
+.hours-table tbody td {
+  border: solid 1px ;
   color: #333;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #fff;
 }
-
-.location {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 40px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;}
-  
+footer {
+  background-color: black;
+  color: orange;
+  padding: 20px;
+  text-align: center;
+}
