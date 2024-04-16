@@ -1,10 +1,12 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 .list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: #222;
   padding: 10px;
 }
 
@@ -24,20 +26,20 @@
 }
 
 .nav-list a {
-  color: orange;
+  color: #c78c06;
   font-family: 'Open Sans', sans-serif;
   padding: 30px;
   text-decoration: none;
 }
 
 .nav-list a:hover {
-  color: black; /* Change the text color to black when you hover over the nav links */
+  color: #222; /* Change the text color to black when you hover over the nav links */
   background-color: orange; /* Add a background color to the nav links when you hover over them */
   border-radius: 5px; /* Add some rounded corners to the nav links when you hover over them */
 }
 
 .search {
-  border: 2px solid orange;
+  border: 2px solid #c78c06;
   padding: 5px;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
@@ -67,8 +69,8 @@
   bottom: -40px;
   left: 10%;
   transform: translateX(-50%);
-  background-color: orange;
-  color: black;
+  background-color: #c78c06;
+  color: #222;
   padding: 30px 40px;
   border: none;
   border-radius: 5px;
@@ -152,7 +154,7 @@
 .video-button,
 .web-button,
 .print-button {
-  background-color: black;
+  background-color: #222;
   color: white;
   font-size: 2rem; /* Increase the font size */
   padding: 1rem 2rem; /* Increase the padding */
@@ -202,7 +204,7 @@
   left: 10%;
   padding: 1.5rem 3rem; /* Increase the padding to make the button bigger */
   transform: translateX(-50%);
-  background-color: black;
+  background-color: #222;
   color: white;
   border: none;
   border-radius: 0.25rem;
@@ -254,10 +256,10 @@
 
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #333;
+  color: #222;
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
@@ -291,7 +293,7 @@ body {
 .contact-us h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: #444;
+  color: #222;
   margin-bottom: 20px;
 }
 
@@ -335,28 +337,28 @@ body {
   padding: 12px;
   font-size: 1.2rem;
   font-weight: 500;
-  color: orange;
-  background-color: black;
+  color: #c78c06;
+  background-color: #222;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .contact-us .send:hover {
-  background-color: #333;
+  background-color: #222;
 }
 
 .hours-table {
   border: solid 1px #DDEEEE;
   border-collapse: collapse;
   border-spacing: 0;
-  font: normal 13px Arial, sans-serif;
+  font: normal 13px open-sans;
   width: 100%; /* Add this line */
  
 }
 .hours-table thead th {
   background-color: #ffe6ac;
-  border: solid 1px black;
+  border: solid 1px #222;
 
   padding: 10px;
   text-align: left;
@@ -369,8 +371,8 @@ body {
   text-shadow: 1px 1px 1px #fff;
 }
 footer {
-  background-color: black;
-  color: orange;
+  background-color: #222;
+  color:#c78c06;
   padding: 20px;
   text-align: center;
 }
