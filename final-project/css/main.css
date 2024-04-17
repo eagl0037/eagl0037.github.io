@@ -368,3 +368,282 @@ footer {
 /* Original CSS styles for desktop */
 
 /* Add a media query for screen widths up to 760px */
+
+
+
+/* Media Query for Tablet/Desktop View (760px and above) */
+@media (min-width: 760px) {
+ 
+  body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+  }
+
+ .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Header Styles */
+ .nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 0;
+  }
+
+ .nav-list li {
+    margin-right: 20px;
+  }
+
+ .nav-list a {
+    color: #c78c06;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+ .logo {
+    width: 80px;
+    height: auto;
+  }
+
+ .search {
+    padding: 8px;
+    width: 200px;
+    font-size: 16px;
+  }
+
+  /* Home Section Styles */
+ .home {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+ .home h1 {
+ 
+  position: absolute;
+  top: 65%;
+  left: 16%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 7px 30px;
+    font-size: 70px;
+  }
+
+ .home p {
+  position: absolute;
+  top: 80.9%;
+  left: 16%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    font-size: 20px;
+    z-index: 1;
+  }
+
+ .connect-button {
+  position: absolute;
+  top: 91%;
+  left: 16%;
+    background-color: #c78c06;
+    color: #222;
+    padding: 30px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 1rem;
+    width: 200px;
+  }
+
+ .button-2 {
+  position: absolute;
+  top: 90.5%;
+  left: 16%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 70px;
+    width: 64%;
+    z-index: 1;
+  }
+
+  /* About Us Section Styles */
+ .about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #ffe6ac;
+  }
+
+ .about-us img {
+    width: 45%;
+    height: auto;
+  }
+
+ .about-us h1 {
+    font-size: 36px;
+    color: #222;
+  }
+
+  /* Our Services Section Styles */
+ .our-services {
+    padding: 50px 0;
+  }
+
+ .our-services h1 {
+    text-align: center;
+    color: #222;
+  }
+
+  .digital-button,
+.marketing-button,
+.video-button,
+.web-button,
+.print-button {
+  background-color: #222;
+  color: white;
+  font-size: 2rem; /* Increase the font size */
+  padding: 1rem 2rem; /* Increase the padding */}
+  
+ .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+
+ .grid-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #ffe6ac;
+  }
+
+ .grid-item h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  /* Team Section Styles */
+ .team-wrapper {
+    background-color: #ffe6ac;
+  }
+
+ .team-members {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+ .team-box {
+    width: 30%;
+  }
+
+ .team-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Contact Us Section Styles */
+ .contact-us {
+    width: 50%;
+    float: left;
+    padding: 40px;
+  }
+
+ .contact-us h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+  }
+
+ .contact-us h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 30px;
+  }
+
+ .contact-us form {
+    margin-bottom: 30px;
+  }
+
+
+.contact-us label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.contact-us input[type="text"],
+.contact-us textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  
+ 
+  margin-bottom: 20px;
+}
+
+.contact-us textarea {
+  height: 150px;
+}
+
+.contact-us .send {
+  display: block;
+
+  padding: 12px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #c78c06;
+  background-color: #222;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-us .send:hover {
+  background-color: #222;
+}
+
+.hours-table {
+  font-size: 14px;
+  border: solid 1px #DDEEEE;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: normal 13px open-sans;
+  width: 100%; /* Add this line */
+ 
+}
+.hours-table thead th {
+  background-color: #ffe6ac;
+  border: solid 1px #222;
+
+  padding: 10px;
+  text-align: left;
+  text-shadow: 1px 1px 1px #fff;
+}
+.hours-table tbody td {
+  border: solid 1px ;
+  color: #333;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #fff;
+}
+footer {
+  background-color: #222;
+  color:#c78c06;
+  padding: 20px;
+  text-align: center;
+}
+}
+
