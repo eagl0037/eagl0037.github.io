@@ -395,7 +395,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #222;
+    background-color: khaki;
     padding: 10px 0;
   }
 
@@ -508,7 +508,7 @@ footer {
 .web-button,
 .print-button {
   background-color: #222;
-  color: red;
+  color: white;
   font-size: 2rem; /* Increase the font size */
   padding: 1rem 2rem; /* Increase the padding */}
 
