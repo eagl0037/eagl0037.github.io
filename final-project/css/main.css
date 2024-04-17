@@ -1,27 +1,39 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@media screen and (max-width: 768px) {
+  /* styles for screens smaller than 768px */
+
+  .container {
+    width: 100%;
+  }
 
 .list {
-  display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  /* display: flex;
+  justify-content: space-between; */
   align-items: center;
   background-color: #222;
   padding: 10px;
 }
 
 .logo {
-  height: 50px;
+  height: 80px;
+  width: 100%;
 }
 
 .nav-list {
-  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* display: flex; */
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .nav-list li {
+  margin: 10px 0;
   margin: 0 20px; /* Increase the margin to spread out the list items */
 }
 
@@ -46,6 +58,7 @@
   
 }
 
+
 .home {
   position: relative;
   width: 100%;
@@ -56,57 +69,70 @@
   height: auto;
 }
 
-.home h1 { position: absolute; top: 40%; left: 35%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); 
+.home h1 {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 7px 30px;
-   font-size: 85px;
-
+  font-size: 30px;
 }
 
-.home p { position: absolute; bottom: 39.6%; left: 35%; transform: translate(-50%, 50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 1.1px 10px;}
+.home p {
+  position: absolute;
+  top: 44%; /* Adjust this value as needed */
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  font-size: 15px;
+  z-index: 1; /* Ensure it's above the image */
+}
 
 .connect-button {
-  position: absolute; 
-  bottom: -40px;
-  left: 10%;
-  transform: translateX(-50%);
+  position: absolute;
+  top: 70%; /* Adjust this value to position below the home p */
+  left: 25%;
+  transform: translate(-50%, -50%);
   background-color: #c78c06;
   color: #222;
   padding: 30px 40px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  z-index: 1; /* Add this line */
-  font-size: 1rem; /* Increase the font size */
-  width: 200px; /* Increase the width */
+  z-index: 2; /* Ensure it's above home p */
+  font-size: 1rem;
+  width: 200px;
 }
 
 .button-2 {
   position: absolute;
-  top: 89.5%;
+  top: 64.3%; /* Adjust this value to position below the connect-button */
   left: 4%;
   padding: 15px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 100px;
+  font-size: 70px;
   width: 64%;
-  z-index: 0; /* Add this line */
+  z-index: 1; /* Ensure it's above home p */
 }
-
-
 
 
 
 .about-us {
-  display: flex;
-  align-items: flex-start;
+  /* display: flex;
+  align-items: flex-start; */
   background-color: #ffe6ac;
 }
 
 .about-us img {
-  width: 40%;
-  margin-right: 5%;
+  /* width: 40%;
+  margin-right: 5%; */
   background-color: #ffe6ac;
 }
 
@@ -125,10 +151,10 @@
 }
 
 .grid-container {
-  display: grid;
-  justify-content: space-evenly;
-  gap: 10px 20px;
-  grid-template-columns: auto auto auto;
+  /* display: grid;
+  justify-content: space-evenly; */
+  /* gap: 10px 20px; */
+  /* grid-template-columns: auto auto auto; */
   background-color: white;
   padding: 5px;
 }
@@ -145,8 +171,8 @@
   background-color: #ffe6ac;
   padding: 7px;
   font-size: 14px;
-  text-align: center;
-  grid-column: span 1;
+  /* text-align: center;
+  grid-column: span 1; */
 }
 
 .digital-button,
@@ -160,85 +186,45 @@
   padding: 1rem 2rem; /* Increase the padding */
 }
 
-.vision {
-  position: relative; /* Position the container relative to its normal position */
-}
 
-.vision img {
-  width: 100%; /* Make the image take up the full width of the container */
-  height: 50vh; /* Set the height of the image to 50 times the viewport height */
-  object-fit: cover; /* Make sure the image covers the entire container */
-}
 
-.vision h1 {
-  position: absolute; /* Position the h1 and p elements absolutely */
-  top: 10%; /* Align the top edge of the h1 and p elements to the middle of the container */
-  left: 10%; /* Align the left edge of the h1 and p elements to the middle of the container */
-  transform: translate(-50%, -50%); /* Move the h1 and p elements up and to the left by 50% of their own width and height */
-  text-align: center; /* Center the text within the h1 and p elements */
-  color: white; /* Set the text color to white */
 
-}
-.vision p {
-  position: absolute; /* Position the h1 and p elements absolutely */
-  top: 40%; /* Align the top edge of the h1 and p elements to the middle of the container */
-  left: 25%; /* Align the left edge of the h1 and p elements to the middle of the container */
-  transform: translate(-50%, -50%); /* Move the h1 and p elements up and to the left by 50% of their own width and height */
-  text-align: center; /* Center the text within the h1 and p elements */
-  color: white; /* Set the text color to white */
-}
 
-.vision h1 {
-  font-size: 2rem; /* Set the font size of the h1 element */
-  margin-bottom: 0.5rem; /* Remove the bottom margin of the h1 element */
-}
 
-.vision p {
-  font-size: 1.2rem; /* Set the font size of the p element */
-  margin-top: 0; /* Remove the top margin of the p element */
-}
 
-.vision button {
-  position: relative;
-  bottom: 10rem;
-  left: 10%;
-  padding: 1.5rem 3rem; /* Increase the padding to make the button bigger */
-  transform: translateX(-50%);
-  background-color: #222;
-  color: white;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  font-size: 1.5rem; /* Increase the font size to make the button text bigger */
 
-}
+
+
 
 
 
 .team-wrapper {
-  margin: 0 10rem;
+  margin: 0;
+  width: 100%;
+ 
   padding: 0;
   background-color: #ffe6ac;
 }
 
 .team-members {
-  display: flex;
-  flex-wrap: wrap;
+ 
+ 
  position: relative;
   top: 70%; /* Align the top edge of the h1 and p elements to the middle of the container */
   
 }
 
 .team-box {
+  
+  height: auto;
+ ;
   box-sizing: border-box;
-  width: 50%;
-  height: 325px;
-  top: 5%;
+
 }
 
 .team-box img {
 
-  height: 380px;
+
   position: relative;
   top: 1%;
 }
@@ -271,19 +257,19 @@ body {
   padding: 40px;
 
   float: left; /* Add this line */
-  width: 50%; /* Add this line */
-
+  width: 100%;
 }
 
 .map {
-  width: 100%; /* Add this line */
-  height: 600px; /* Add this line */
+  width: 100%;
+  height: auto;
+
   border: 0; /* Add this line */
 }
 
 
 .contact-us {
-  max-width: 600px;
+  width: 100%;
   margin: 0 auto;
   padding: 40px;
   float: left; /* Add this line */
@@ -349,6 +335,7 @@ body {
 }
 
 .hours-table {
+  font-size: 14px;
   border: solid 1px #DDEEEE;
   border-collapse: collapse;
   border-spacing: 0;
@@ -376,3 +363,8 @@ footer {
   padding: 20px;
   text-align: center;
 }
+}
+
+/* Original CSS styles for desktop */
+
+/* Add a media query for screen widths up to 760px */
