@@ -1,12 +1,26 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   /* styles for screens smaller than 768px */
+
+  /* Within this media query, styles are defined for screens smaller than 760px.
+The .container class is set to 100% width to occupy the full width of smaller screens.
+The .nav-list class styles the navigation menu for smaller screens:
+Flex-direction is changed to column to stack items vertically.
+align-items and background-color are adjusted. */
 
   .container {
     width: 100%;
   }
+
+/* 
+  This media query targets screens with a minimum width of 760px.
+The .container class is adjusted to have a maximum width of 1200px with left and right padding.
+The .nav-list class is restyled for larger screens:
+Display is set to flex to create a horizontal layout.
+Items are justified with justify-content: space-between to distribute them evenly.
+.logo and .search classes are styled for larger screens. */
 
 .list {
   flex-direction: column;
@@ -19,9 +33,15 @@
 }
 
 .logo {
-  background-color: #222;
-  height: 80px;
-  width: 100%;
+  width: 80px;
+  height: auto;
+  background-color: #c78c06;
+}
+
+.search {
+  padding: 8px;
+  width: 200px;
+  font-size: 16px;
 }
 
 .nav-list {
@@ -31,6 +51,7 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  background-color: #222;
 }
 
 .nav-list li {
@@ -50,15 +71,10 @@
   background-color: orange; /* Add a background color to the nav links when you hover over them */
   border-radius: 5px; /* Add some rounded corners to the nav links when you hover over them */
 }
-
-.search {
-  border: 2px solid #c78c06;
-  padding: 5px;
-  font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #222;
-}
-
+/* 
+Positioned elements within the .home class are styled with absolute positioning for layout.
+The h1 tag within .home has a background color and is positioned using transform to center it.
+.connect-button and .button-2 are positioned absolutely below the text with specific padding and background colors. */
 
 .home {
   position: relative;
@@ -159,6 +175,8 @@
   background-color: white;
   padding: 5px;
 }
+/* .grid-container: Styles a container for a grid layout.
+.grid-item: Styles items within the grid layout. */
 
 .grid-item {
   background-color: #ffe6ac;
@@ -188,16 +206,36 @@
 }
 
 
+.vision-wrapper h1 {
+  position: absolute;
+  top: 560%;
+  left: 16%;
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 40px;
+}
 
+.vision-wrapper p {
+  position: absolute;
+  top: 580%;
+  left: 7%;
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
 
-
-
-
-
-
-
-
-
+.vision-wrapper button {
+  position: absolute;
+  top: 600%;
+  left: 16%;
+  background-color: #222;
+  color: white;
+  padding: 2rem 5rem;
+  border: #c78c06; 
+  border-radius: 5px;
+  cursor: pointer;
+  font-size:20px;
+}
 
 .team-wrapper {
   margin: 0;
@@ -267,7 +305,12 @@ body {
 
   border: 0; /* Add this line */
 }
-
+/* .contact-us: Styles the container for the "Contact Us" section.
+.contact-us h1, .contact-us h2: Styles headings within the "Contact Us" section.
+.contact-us form: Styles the form within the "Contact Us" section.
+.contact-us label: Styles labels for form elements.
+.contact-us input[type="text"], .contact-us textarea: Styles input fields and text areas.
+.contact-us .send: Styles the send button within the contact form. */
 
 .contact-us {
   width: 100%;
@@ -358,6 +401,7 @@ body {
   padding: 10px;
   text-shadow: 1px 1px 1px #fff;
 }
+/* footer: Styles the footer section of the webpage. */
 footer {
   background-color: #222;
   color:#c78c06;
@@ -373,8 +417,10 @@ footer {
 
 
 /* Media Query for Tablet/Desktop View (760px and above) */
-@media (min-width: 760px) {
 
+@media (min-width: 760px) {
+  /* Contains media queries for responsive design, adjusting styles based on screen width.
+  Each section has specific styles applied to its elements to achieve a desired layout and appearance. The detailed comments within the CSS provide information on what each section of the styles is targeting and how they affect the visual presentation of the webpage. */
  
   body {
     font-family: 'Open Sans', sans-serif;
@@ -474,8 +520,12 @@ footer {
     width: 64%;
     z-index: 1;
   }
+  /* .about-us: Styles the container for the "About Us" section.
+  .about-us img: Styles images within the "About Us" section.
+  .about-us h1: Styles the heading within the "About Us" section.
+  .about-us p: Styles the paragraph within the "About Us" section.
+  About Us Section Styles */
 
-  /* About Us Section Styles */
  .about-us {
     display: flex;
     justify-content: space-between;
@@ -495,6 +545,8 @@ footer {
   }
 
   /* Our Services Section Styles */
+  /* .our-services: Styles the container for the "Our Services" section.
+.digital-button, .marketing-button, .video-button, .web-button, .print-button: Styles specific buttons related to services. */
  .our-services {
     padding: 50px 0;
   }
@@ -531,8 +583,63 @@ footer {
     font-size: 24px;
     margin-bottom: 10px;
   }
+  /* .vision-wrapper: Styles a wrapper for the "Vision" section.
+  .vision-wrapper h1: Styles the heading within the "Vision" section.
+  .vision-wrapper p: Styles the paragraph within the "Vision" section.
+  .vision-wrapper button: Styles a button within the "Vision" section. */
+  
+  .vision-img {
+    position: relative;
+    width: 100%
+
+  }
+  
+  .vision-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .vision-wrapper h1 {
+    position: absolute;
+    top: 142%;
+    left: 16%;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 90px;
+  }
+  
+  .vision-wrapper p {
+    position: absolute;
+    top: 430%;
+    left: 7%;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 20px;
+  }
+  
+  .vision-wrapper button {
+    position: absolute;
+    top: 600%;
+    left: 16%;
+    background-color: #222;
+    color: white;
+    padding: 3rem 6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: x-large;
+  }
 
   /* Team Section Styles */
+  /* .team-wrapper: Styles the container for the "Team" section.
+.team-members: Styles the member container within the "Team" section.
+.team-box: Styles individual team member boxes. */
+
  .team-wrapper {
     background-color: #ffe6ac;
     margin: 0 10rem;
@@ -552,7 +659,7 @@ footer {
   }
 
  .team-box img {
-    height: 325px;
+    height: 320px;
   }
 
   .team-box:nth-child(2),
@@ -642,15 +749,16 @@ footer {
 
   background-color: #fff;
 }
-
+/* location: Styles the location container.
+.map: Styles the map element. */
 .map {
   position: absolute;
- bottom:-537% ;
-  left: 57%;
+ bottom:-455% ;
+  left: 63%;
 
    height: 500px; /* Set the height to be the same as the .contact-us section */ 
 }
-
+/* .hours-table: Styles a table for displaying hours of operation. */
 .hours-table {
   font-size: 14px;
   border: solid 1px #DDEEEE;
